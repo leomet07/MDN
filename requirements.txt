@@ -15,7 +15,7 @@ gast
 google-auth
 google-auth-oauthlib
 google-pasta
-grpcio1
+grpcio
 h5py
 idna
 importlib-metadata
@@ -42,7 +42,7 @@ requests-oauthlib
 rsa
 scikit-learn
 scipy
-seaborn1
+seaborn
 six
 statsmodels
 tensorboard
@@ -55,9 +55,9 @@ termcolor
 threadpoolctl
 tqdm
 typing-extensions
-urllib35
+urllib3
 Werkzeug
-wrapt1
+wrapt
 xgboost
 zipp
 scikit-image
