@@ -618,7 +618,7 @@ def map_cube(img_data, wvl_bands, sensor, products='chl,tss,cdom', land_mask=Fal
         water_spectra = img_data[water_pixels[0], water_pixels[1], :]
     else:
         'Get a simple mask removing pixels with Nan values'
-        img_mask = np.asarray((np.isnan(np.min(img_data, axis=2))), dtype=np.float)
+        img_mask = np.asarray((np.isnan(np.min(img_data, axis=2))), dtype=np.float64)
 
         'Get the locations/spectra for the water pixels'
         water_pixels = np.where(img_mask == 0)
@@ -983,7 +983,7 @@ def map_cube_mdn_full(args, img_data, wvl_bands, land_mask=False, landmask_thres
         water_spectra = img_data[water_pixels[0], water_pixels[1], :]
     else:
         'Get a simple mask removing pixels with Nan values'
-        img_mask = np.asarray((np.isnan(np.min(img_data, axis=2))), dtype=np.float)
+        img_mask = np.asarray((np.isnan(np.min(img_data, axis=2))), dtype=np.float64)
 
         'Get the locations/spectra for the valid water pixels'
         water_pixels = np.where(img_mask == 0)
